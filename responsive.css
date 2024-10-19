@@ -1,0 +1,420 @@
+/* responsive.css */
+
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        padding: 10px 2%;
+    }
+
+    .logo {
+        width: 80px;
+        margin-bottom: 8px;
+    }
+
+    nav {
+        display: none; 
+    }
+
+    @media screen and (max-width: 768px) {
+        .index-background {
+            background-size: cover; 
+            min-height: 100vh;
+        }
+        
+        .profile {
+            width: 90%;
+            height: auto; 
+        }
+        
+        .app-text h1 {
+            font-size: 2em; 
+        }
+        
+        .app-text h2 {
+            font-size: 2.5em; 
+        }
+        
+        .buttoninfo {
+            width: 90%; 
+            font-size: 14px; 
+            padding: 10px; 
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .index-background {
+            min-height: 100vh; 
+        }
+        
+        .profile {
+            width: 90%;
+            height: auto; 
+            margin: 5% auto; 
+        }
+        
+        .app-text h1 {
+            font-size: 1.5em; 
+        }
+        
+        .app-text h2 {
+            font-size: 2em; 
+        }
+        
+        .buttoninfo {
+            width: 100%; 
+            padding: 10px; 
+            font-size: 14px; 
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .page2-background {
+            background-size: cover;
+            height: auto; 
+        }
+    
+        .Page2context1 {
+            width: 90%;
+            top: 10%; 
+            left: 50%; 
+            transform: translateX(-50%);
+        }
+    
+        .img-intro {
+            width: 50%; 
+            height: auto; 
+            left: 25%; 
+            top: 20%;
+        }
+    
+        .text-container {
+            width: 100%; 
+            text-align: center; 
+            padding: 0 10px; 
+        }
+    
+        .Page2context1 h1 {
+            font-size: 1.8em; 
+        }
+    
+        .Page2context1 h2 {
+            font-size: 2em; 
+        }
+    
+        .Page2context1 p {
+            font-size: 0.9em; 
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .Page2context1 {
+            width: 95%;
+            top: 10%;
+        }
+    
+        .img-intro {
+            width: 70%; 
+            left: 15%; 
+        }
+    
+        .Page2context1 h1 {
+            font-size: 1.5em; 
+        }
+    
+        .Page2context1 h2 {
+            font-size: 2em; 
+        }
+    
+        .Page2context1 p {
+            font-size: 0.8em; 
+        }
+    }
+    .acadbackground {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        margin-top: 20px;       
+    }
+
+    .acadbackground h1 {
+        font-size: 2.5em;
+    }
+
+    .acadbackground .box {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        padding: 10px;
+        
+    }
+
+    .acadbackground .box .background-text {
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+    }
+
+    .acadbackground .box .background-text img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .Page2context1 span, .acadbackground h1 span {
+        font-size: 1em;
+    }
+
+    @media screen and (max-width: 768px) {
+        .goal {
+            padding: 20px;  
+            height: auto;  
+            align-items: flex-start; 
+        }
+        .goal h1 {
+            font-size: 2em;
+        }
+        .goalpic {
+            width: 90%;  
+            margin-top: 5%;  
+        }
+        .goal-text {
+            width: 90%;
+            margin-left: 0;  
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .goal {
+            padding: 15px;  
+            height: auto;  
+            align-items: flex-start; 
+        }
+        .goal h1 {
+            font-size: 1.5em;
+        }
+        .goalpic {
+            width: 100%;
+            margin-top: 0;
+            height: auto;  
+        }
+        .goal-text {
+            width: 100%;
+        }
+        .goal-text p {
+            font-size: 0.2em;
+        }
+    }
+    
+    
+    .hobbies-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    .hobbies-box {
+        width: 90%;
+        max-width: 100%;
+        height: auto;
+        padding: 1em;
+    }
+
+    .skills_section {
+        padding: 20px;
+    }
+
+    .skills_head h2 {
+        font-size: 2em;
+    }
+
+    .skills_main {
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px;
+        grid-column-gap: 0;
+    }
+
+    .skill_bar .info p {
+        font-size: 0.9em;
+    }
+
+    .skill_bar .bar {
+        height: 8px;
+    }
+
+    .contact {
+        width: 95%;
+        position: static;
+        top: 0;
+        left: 0;
+        margin: 20px auto;
+    }
+
+    .contact form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input-group,
+    .input-group-2 {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1em;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    .btn {
+        width: 90%;
+        padding: 0.8rem;
+        font-size: 1em;
+    }
+
+    .footercontact {
+        padding: 20px 10px;
+    }
+
+    .SocialIcons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SocialIcons div {
+        margin: 10px 0;
+    }
+
+    .SocialIcons a {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .SocialIcons span {
+        display: none; 
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .blog {
+        padding: 2rem 0; 
+    }
+
+    .blog-content {
+        grid-template-columns: 2fr; 
+        gap: 1rem; 
+    }
+
+    .blog-text h2 {
+        font-size: 1.4rem; 
+    }
+
+    .blog-text p {
+        font-size: 1rem; 
+    }
+
+    .comment {
+        height: auto;
+        padding: 1rem; 
+    }
+
+    .comment h1 {
+        font-size: 2.5em; 
+    }
+
+    .comment form {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        margin: 2rem auto; 
+    }
+
+    .comment form input,
+    .comment form textarea {
+        width: 90%; 
+        margin-bottom: 1rem; 
+        padding: 0.8rem; 
+    }
+
+    .content-blog h1 {
+        font-size: 3em; 
+    }
+
+    .content-blog a {
+        font-size: 1.2rem; 
+        padding: 10px 15px; 
+    }
+}
+
+
+.background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .background-clip {
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact {
+        width: 100%;
+        left: 0; 
+        top: 10%; 
+        position: relative; 
+        margin: auto;
+    }
+
+    .contact h1 {
+        font-size: 2em; 
+    }
+
+    .input-group,
+    .input-group-2 {
+        width: 100%; 
+        margin: 0 0 20px 0; 
+    }
+
+    input,
+    textarea {
+        padding: 1rem; 
+        font-size: 1rem; 
+    }
+
+    textarea {
+        width: 100%; 
+    }
+
+    .btn {
+        width: 100%; 
+    }
+
+    .contact form {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px;
+    }
+}
